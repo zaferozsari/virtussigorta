@@ -159,6 +159,20 @@ header {
             color: white;
             padding: 2rem;
         }
+			@media (max-width: 768px) {
+		.slide-content {
+			padding: 1rem;
+			font-size: 0.9rem;
+		}
+
+		.slide-content h2 {
+			font-size: 1.5rem;
+		}
+
+		.slide-content p {
+			font-size: 0.8rem;
+		}
+	}
         
         /* Main Content */
         main {
