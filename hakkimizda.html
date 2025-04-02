@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtus Sigorta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Virtus Sigorta" class="logo-img">
+        </a>
+            <div class="menu-toggle">☰</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li class="dropdown">
+                        <a href="hizmetler.html">Hizmetlerimiz <span>▼</span></a>
+                        <div class="dropdown-content">
+                            <a href="index.html#saglik">Sağlık</a>
+                            <a href="index.html#kasko">Kasko</a>
+                            <a href="index.html#trafik">Trafik</a>
+							 <a href="index.html#konut">Konut</a>
+							  <a href="index.html#dask">Dask</a>
+							   <a href="index.html#isyeri">İş Yeri</a>
+							    <a href="index.html#tekne">Tekne ve Deniz Taşıtı</a>
+								 <a href="index.html#iskazasi">İş Kazası ve Meslek Hastalıkları Sigortası</a>
+								  <a href="index.html#seyahat">Seyahat</a>
+								   <a href="index.html#bireyselemeklilik">Bireysel Emeklilik</a>
+								    <a href="index.html#hayat">Hayat</a>
+								     <a href="index.html#evcilhayvan">Evcil Hayvan Sigortası</a>
+                        </div>
+                    </li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">Bize Ulaşın</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title">Hakkımızda</h1>
+        
+        <section class="about-section">
+            <div class="about-img" style="background-image: url('https://images.unsplash.com/photo-1571624436279-b272aff752b5?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+            <div class="about-content">
+                <h2>Biz Kimiz?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet rutrum neque vel mattis. Integer auctor tempus libero sodales euismod. Phasellus convallis sodales sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse iaculis orci a faucibus finibus. Praesent quis lectus non neque interdum eleifend ac eu est.  </p>
+                <p>Vivamus in nunc nec leo rhoncus venenatis. Maecenas a hendrerit sem. Maecenas vitae imperdiet arcu. Mauris at odio sed elit pretium lobortis. Aliquam rutrum scelerisque fringilla. Etiam sit amet efficitur ipsum.</p>
+            </div>
+        </section>
+        
+        <section class="about-section reverse">
+            <div class="about-content">
+                <h2>Vizyonumuz</h2>
+                <p>Donec tempor, ex quis tincidunt laoreet, est turpis convallis lacus, eget mollis nulla libero at justo. Aenean ullamcorper felis nec purus porttitor pellentesque. </p>
+                <h2>Misyonumuz</h2>
+                <p>Nunc posuere sit amet dolor non elementum. </p>
+            </div>
+            <div class="about-img" style="background-image: url('https://images.unsplash.com/photo-1622202210941-5fc06f1d581a?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+        </section>
+        
+       <!-- <section class="team-section">
+            <h2 class="section-title">Ekibimiz</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://source.unsplash.com/random/400x400/?man,portrait')"></div>
+                    <div class="service-content">
+                        <h3>Ahmet Yılmaz</h3>
+                        <p>Kurucu & Web Tasarım Uzmanı</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://source.unsplash.com/random/400x400/?woman,portrait')"></div>
+                    <div class="service-content">
+                        <h3>Ayşe Demir</h3>
+                        <p>Dijital Pazarlama Uzmanı</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://source.unsplash.com/random/400x400/?man,developer')"></div>
+                    <div class="service-content">
+                        <h3>Mehmet Kaya</h3>
+                        <p>Yazılım Geliştirici</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+     <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo" id="hakkimizda">Virtus Sigorta</div>
+                    <p>Sigortacılık sektöründeki uzmanlığımız ve derin bilgi birikimimizle hizmetinizdeyiz.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Hizmetlerimiz</h3>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>İletişim</h3>
+                    <p><strong>Adres:</strong>Esentepe, İnönü Cd. No:147
+				İç Kapı No: 124 Kartalkule, 34870 
+				Kartal / İstanbul</p>
+                    <p><strong>Telefon:</strong> (0216) 999 44 69</p>
+                <p><strong>Email:</strong> info@virtussigorta.com</p>
+                <p><strong>Çalışma Saatleri:</strong> Pazartesi - Cuma: 09:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Virtus Sigorta</p>
+            </div>
+        </div>
+    </footer>
+
+      <script>
+	document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("a[href^='index.html#'], a[href^='#']");
+
+  links.forEach(link => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault(); // Varsayılan davranışı engelle
+      const targetId = this.getAttribute("href").split("#")[1]; // ID'yi al
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        const yOffset = -400; // Sayfanın biraz daha aşağı kayması için
+        const y = targetElement.getBoundingClientRect().top + window.scrollY + yOffset;
+        
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    });
+  });
+});
+
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+
+        // Dropdown Menu for Mobile
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.classList.toggle('active');
+                }
+            });
+        });
+
+        // Hero Slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+        
+        // Change slide every 5 seconds
+        setInterval(nextSlide, 5000);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Initialize map (for contact page)
+        if (document.getElementById('map')) {
+            const map = L.map('map').setView([40.909705, 29.190549], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            
+            L.marker([40.909705, 29.190549]).addTo(map)
+                .bindPopup('Virtus Sigorta')
+                .openPopup();
+        }
+		
+		
+    </script>
+</body>
+</html>
