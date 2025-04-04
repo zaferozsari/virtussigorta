@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+      <header>
         <div class="container header-container">
             <a href="index.html" class="logo">
             <img src="logo.png" alt="Virtus Sigorta" class="logo-img">
@@ -18,24 +18,24 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Ana Sayfa</a></li>
+					<li><a href="./hakkimizda.html">Hakkımızda</a></li>
                     <li class="dropdown">
-                        <a href="hizmetler.html">Hizmetlerimiz <span>▼</span></a>
+                        <a href="#">Hizmetlerimiz <span>▼</span></a>
                         <div class="dropdown-content">
-                            <a href="index.html#saglik">Sağlık</a>
-                            <a href="index.html#kasko">Kasko</a>
-                            <a href="index.html#trafik">Trafik</a>
-							 <a href="index.html#konut">Konut</a>
-							  <a href="index.html#dask">Dask</a>
-							   <a href="index.html#isyeri">İş Yeri</a>
-							    <a href="index.html#tekne">Tekne ve Deniz Taşıtı</a>
-								 <a href="index.html#iskazasi">İş Kazası ve Meslek Hastalıkları Sigortası</a>
-								  <a href="index.html#seyahat">Seyahat</a>
-								   <a href="index.html#bireyselemeklilik">Bireysel Emeklilik</a>
-								    <a href="index.html#hayat">Hayat</a>
-								     <a href="index.html#evcilhayvan">Evcil Hayvan Sigortası</a>
+                            <a href="./index.html#saglik">Sağlık Sigortaları</a>
+                            <a href="./index.html#otokaza">Oto/Kaza Sigortaları</a>
+                            <a href="./index.html#konutdask">Konut/DASK Sigortaları</a>
+							 <a href="./index.html#isyeri">İşyeri Sigortaları</a>
+							  <a href="./index.html#yattekne">Yat/Tekne Sigortaları</a>
+							   <a href="./index.html#sorumluluk">Sorumluluk Sigortaları</a>
+							    <a href="./index.html#bireysel">Bireysel Emeklilik</a>
+								 <a href="./index.html#hayat">Hayat Sigortaları</a>
+								  <a href="./index.html#alacak">Alacak Sigortaları</a>
+								   <a href="./index.html#evcilhayvan">Evcil Hayvan Sigortaları</a>
+								   
                         </div>
                     </li>
-                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    
                     <li><a href="iletisim.html">Bize Ulaşın</a></li>
                 </ul>
             </nav>
@@ -54,7 +54,7 @@
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email Adresiniz</label>
+                        <label for="email">E-posta Adresiniz</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
@@ -70,11 +70,11 @@
             </div>
             
             <div class="contact-info">
-                <p><strong>Adres:</strong>Esentepe, İnönü Cd. No:147
+                <p><strong>Adres: </strong>Esentepe, İnönü Cd. No:147
 				İç Kapı No: 124 Kartalkule, 34870 
 				Kartal / İstanbul</p>
                 <p><strong>Telefon:</strong> (0216) 999 44 69</p>
-                <p><strong>Email:</strong> info@virtussigorta.com</p>
+                <p><strong>E-Posta:</strong> info@virtussigorta.com</p>
                 <p><strong>Çalışma Saatleri:</strong> Pazartesi - Cuma: 09:00 - 18:00</p>
                 
                 <div class="map-container" id="map"></div>
@@ -82,38 +82,51 @@
         </div>
     </main>
 
-     <footer>
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <div class="footer-logo" id="hakkimizda">Virtus Sigorta</div>
-                    <p>Sigortacılık sektöründeki uzmanlığımız ve derin bilgi birikimimizle hizmetinizdeyiz.</p>
+                    <h3>Hakkımızda</h3>
+                    <p>Virtus Sigorta acentesi olarak, hayatın getirdiği belirsizliklere karşı güçlü bir koruma sağlamak için buradayız. İster bireysel ister kurumsal çözümler arayın, ihtiyaçlarınıza uygun sigorta seçeneklerimizle yanınızdayız. </p><a href="hakkimizda.html">devamı...</a>
                 </div>
                 <div class="footer-links">
                     <h3>Hizmetlerimiz</h3>
-                    <ul>
-                        <li><a href="index.html#saglik">Sağlık</a></li>
-                            <li><a href="index.html#kasko">Kasko</a></li>
-                            <li><a href="index.html#trafik">Trafik</a></li>
-							 <li><a href="index.html#konut">Konut</a></li>
-							  <li><a href="index.html#dask">Dask</a></li>
-							   <li><a href="index.html#isyeri">İş Yeri</a></li>
-							    <li><a href="index.html#tekne">Tekne ve Deniz Taşıtı</a></li>
-								 <li><a href="index.html#iskazasi">İş Kazası ve Meslek Hastalıkları Sigortası</a></li>
-								  <li><a href="index.html#seyahat">Seyahat</a></li>
-								   <li><a href="index.html#bireyselemeklilik">Bireysel Emeklilik</a></li>
-								    <li><a href="index.html#hayat">Hayat</a></li>
-								     <li><a href="index.html#evcilhayvan">Evcil Hayvan Sigortası</a></li>
-                    </ul>
+
+<ul class="dropdown-menu">
+    <li><p><a href="index.html#saglik">Sağlık Sigortaları</a></p></li>
+    <li><p><a href="index.html#kasko">Oto/Kaza Sigortaları</a></p></li>
+    <li><p><a href="index.html#trafik">Konut/DASK Sigortaları</a></p></li>
+    <li><p><a href="index.html#konut">İşyeri Sigortaları</a></p></li>
+    
+    <!-- Gizli öğeler -->
+    <div class="hidden-items" style="display:none;">
+        <li><p><a href="index.html#dask">Dask</a></p></li>
+        <li><p><a href="index.html#isyeri">İş Yeri</a></p></li>
+        <li><p><a href="index.html#tekne">Tekne ve Deniz Taşıtı</a></p></li>
+        <li><p><a href="index.html#iskazasi">İş Kazası ve Meslek Hastalıkları Sigortası</a></p></li>
+        <li><p><a href="index.html#seyahat">Seyahat</a></p></li>
+        <li><p><a href="index.html#bireyselemeklilik">Bireysel Emeklilik</a></p></li>
+        <li><p><a href="index.html#hayat">Hayat</a></p></li>
+        <li><p><a href="index.html#evcilhayvan">Evcil Hayvan Sigortası</a></p></li>
+    </div>
+    
+    <!-- Devamını Göster/Gizle Butonu -->
+    <li class="toggle-button">
+        <button onclick="toggleItems()">Tümünü Göster</button>
+    </li>
+</ul>
+
+
                 </div>
                 <div class="footer-contact">
                     <h3>İletişim</h3>
-                    <p><strong>Adres:</strong>Esentepe, İnönü Cd. No:147
+                    <p><strong>Adres: </strong>Esentepe, İnönü Cd. No:147
 				İç Kapı No: 124 Kartalkule, 34870 
 				Kartal / İstanbul</p>
                     <p><strong>Telefon:</strong> (0216) 999 44 69</p>
-                <p><strong>Email:</strong> info@virtussigorta.com</p>
-                <p><strong>Çalışma Saatleri:</strong> Pazartesi - Cuma: 09:00 - 18:00</p>
+                <p><strong>E-Posta:</strong> info@virtussigorta.com</p>
+                <p><strong>Çalışma Saatleri:</strong></p>
+				<p>Pazartesi - Cuma: 09:00 - 18:00</p>
                 </div>
             </div>
             <div class="copyright">
@@ -123,6 +136,20 @@
     </footer>
 
       <script>
+	  function toggleItems() {
+    const hiddenItems = document.querySelector('.hidden-items');
+    const button = document.querySelector('.toggle-button button');
+    
+    if (hiddenItems.style.display === "none") {
+        hiddenItems.style.display = "block";
+        button.textContent = "▲";
+    } else {
+        hiddenItems.style.display = "none";
+        button.textContent = "Tümünü Göster";
+    }
+}
+
+	  
 	document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll("a[href^='index.html#'], a[href^='#']");
 
@@ -158,32 +185,7 @@
             });
         });
 
-        // Hero Slider
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        
-        function showSlide(n) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            currentSlide = (n + slides.length) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
-        
-        function nextSlide() {
-            showSlide(currentSlide + 1);
-        }
-        
-        // Change slide every 5 seconds
-        setInterval(nextSlide, 5000);
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+      
 
         // Initialize map (for contact page)
         if (document.getElementById('map')) {
