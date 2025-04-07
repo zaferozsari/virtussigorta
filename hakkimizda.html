@@ -143,11 +143,16 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>Virtus Sigorta</p>
+                <p>Copyright © 2025 Virtus Sigorta Aracılık Hizmetleri Ltd. Şti. Tüm hakları saklıdır.</p>
             </div>
         </div>
     </footer>
-
+<div id="cookie-consent" style="display:none; position: fixed; bottom: 20px; left: 20px; right: 20px; background: #f5f5f5; padding: 15px; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 9999; font-family: sans-serif;">
+  Web sitemizde sunulan ve açıkça talep etmiş olduğunuz hizmetler için gerekli, birinci taraf oturum çerezleri ve kalıcı çerezler kullanılmaktadır. Detaylar için <a href="./cerez-politikasi.pdf" target="_blank">çerez politikamıza</a> göz atabilirsiniz.
+  <button id="accept-cookie" style="margin-left: 15px; padding: 6px 12px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">
+    Anladım
+  </button>
+</div>
       <script>
 	  
 	  function toggleItems() {
@@ -202,5 +207,19 @@
        
 		
     </script>
+	<script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!localStorage.getItem("cookieConsent")) {
+      document.getElementById("cookie-consent").style.display = "block";
+    }
+
+    document.getElementById("accept-cookie").addEventListener("click", function () {
+      localStorage.setItem("cookieConsent", true);
+      document.getElementById("cookie-consent").style.display = "none";
+    });
+  });
+
+</script>
 </body>
 </html>

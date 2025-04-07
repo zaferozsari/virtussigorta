@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css" />
+	
 </head>
 <body>
       <header>
@@ -22,16 +23,16 @@
                     <li class="dropdown">
                         <a href="#">Hizmetlerimiz <span>▼</span></a>
                         <div class="dropdown-content">
-                            <a href="./index.html#saglik">Sağlık Sigortaları</a>
-                            <a href="./index.html#otokaza">Oto/Kaza Sigortaları</a>
-                            <a href="./index.html#konutdask">Konut/DASK Sigortaları</a>
-							 <a href="./index.html#isyeri">İşyeri Sigortaları</a>
-							  <a href="./index.html#yattekne">Yat/Tekne Sigortaları</a>
-							   <a href="./index.html#sorumluluk">Sorumluluk Sigortaları</a>
+                            <a href="./index.html#saglik">Sağlık Sigortası</a>
+                            <a href="./index.html#otokaza">Oto/Kaza Sigortası</a>
+                            <a href="./index.html#konutdask">Konut/DASK Sigortası</a>
+							 <a href="./index.html#isyeri">İşyeri Sigortası</a>
+							  <a href="./index.html#yattekne">Yat/Tekne Sigortası</a>
+							   <a href="./index.html#sorumluluk">Sorumluluk Sigortası</a>
 							    <a href="./index.html#bireysel">Bireysel Emeklilik</a>
-								 <a href="./index.html#hayat">Hayat Sigortaları</a>
-								  <a href="./index.html#alacak">Alacak Sigortaları</a>
-								   <a href="./index.html#evcilhayvan">Evcil Hayvan Sigortaları</a>
+								 <a href="./index.html#hayat">Hayat Sigortası</a>
+								  <a href="./index.html#alacak">Alacak Sigortası</a>
+								   <a href="./index.html#evcilhayvan">Evcil Hayvan Sigortası</a>
 								   
                         </div>
                     </li>
@@ -46,7 +47,7 @@
         <h1 class="section-title">Bize Ulaşın</h1>
         
         <div class="contact-container">
-            <div class="contact-form">
+             <div class="contact-form">
                 <h2>İletişim Formu</h2>
                 <form id="contactForm">
                     <div class="form-group">
@@ -67,8 +68,8 @@
                     </div>
                     <button type="submit" class="submit-btn">Gönder</button>
                 </form>
-            </div>
-            
+            </div> 
+
             <div class="contact-info">
                 <p><strong>Adres: </strong>Esentepe, İnönü Cd. No:147
 				İç Kapı No: 124 Kartalkule, 34870 
@@ -93,10 +94,10 @@
                     <h3>Hizmetlerimiz</h3>
 
 <ul class="dropdown-menu">
-    <li><p><a href="index.html#saglik">Sağlık Sigortaları</a></p></li>
-    <li><p><a href="index.html#kasko">Oto/Kaza Sigortaları</a></p></li>
-    <li><p><a href="index.html#trafik">Konut/DASK Sigortaları</a></p></li>
-    <li><p><a href="index.html#konut">İşyeri Sigortaları</a></p></li>
+    <li><p><a href="index.html#saglik">Sağlık Sigortası</a></p></li>
+    <li><p><a href="index.html#kasko">Oto/Kaza Sigortası</a></p></li>
+    <li><p><a href="index.html#trafik">Konut/DASK Sigortası</a></p></li>
+    <li><p><a href="index.html#konut">İşyeri Sigortası</a></p></li>
     
     <!-- Gizli öğeler -->
     <div class="hidden-items" style="display:none;">
@@ -130,11 +131,16 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>Virtus Sigorta</p>
+                <p>Copyright © 2025 Virtus Sigorta Aracılık Hizmetleri Ltd. Şti. Tüm hakları saklıdır.</p>
             </div>
         </div>
     </footer>
-
+<div id="cookie-consent" style="display:none; position: fixed; bottom: 20px; left: 20px; right: 20px; background: #f5f5f5; padding: 15px; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 9999; font-family: sans-serif;">
+  Web sitemizde sunulan ve açıkça talep etmiş olduğunuz hizmetler için gerekli, birinci taraf oturum çerezleri ve kalıcı çerezler kullanılmaktadır. Detaylar için <a href="./cerez-politikasi.pdf" target="_blank">çerez politikamıza</a> göz atabilirsiniz.
+  <button id="accept-cookie" style="margin-left: 15px; padding: 6px 12px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">
+    Anladım
+  </button>
+</div>
       <script>
 	  function toggleItems() {
     const hiddenItems = document.querySelector('.hidden-items');
@@ -238,5 +244,19 @@
             .bindPopup('Virtus Sigorta')
             .openPopup();
     </script>
+	<script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!localStorage.getItem("cookieConsent")) {
+      document.getElementById("cookie-consent").style.display = "block";
+    }
+
+    document.getElementById("accept-cookie").addEventListener("click", function () {
+      localStorage.setItem("cookieConsent", true);
+      document.getElementById("cookie-consent").style.display = "none";
+    });
+  });
+
+</script>
 </body>
 </html>
