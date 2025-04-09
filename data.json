@@ -1,0 +1,122 @@
+[
+  {
+    "page": "index.html",
+    "id": "saglik",
+	"title": "Özel Sağlık Sigortası",
+    "text": "Özel Sağlık Sigortası, sigortalının hastalık veya kaza sonucu oluşabilecek sağlık giderlerini güvence altına alan bir sigorta türüdür. Sigortalının tercih ettiği poliçe kapsamına göre yatarak tedavi, ayakta tedavi, muayene, ameliyat, ilaç ve tetkik gibi sağlık hizmetlerini karşılamaktadır. Özel Sağlık Sigortası, kamu sağlık hizmetlerinden bağımsız olarak özel hastanelerde ve sağlık kuruluşlarında hızlı ve kaliteli hizmet alabilme imkanı sunar. Poliçe kapsamında yer alan anlaşmalı sağlık kurumlarında, sigortalıların tedavi masrafları doğrudan karşılanırken, anlaşmasız kurumlarda yapılan harcamalar ise belirlenen limitler dahilinde sigortalıya geri ödenebilir. Sigortalının sağlık ihtiyaçlarına ve bütçesine uygun çeşitli planlar sunan bu sigorta türü, hem bireysel hem de aile poliçesi olarak düzenlenebilmektedir."
+  },
+  {
+    "page": "index.html",
+    "id": "tamamlayicisaglik",
+	"title": "Tamamlayıcı Sağlık Sigortası",
+    "text": "Tamamlayıcı Sağlık Sigortası, Sosyal Güvenlik Kurumu (SGK) ile anlaşmalı özel hastanelerde, SGK’nın karşıladığı sağlık giderlerinin üzerinde kalan fark ücretlerini güvence altına alan bir sigorta türüdür. Bu sayede, sigortalılar özel hastanelerde ek ödeme yapmadan sağlık hizmetlerinden yararlanabilir. Hem yatarak hem de ayakta tedavi masraflarını kapsayan planlarla, bütçeye uygun sağlık hizmeti alma imkanı sunmaktadır."
+  },
+  {
+    "page": "index.html",
+    "id": "seyahatsaglik",
+	"title": "Seyahat Sağlık Sigortası",
+    "text": "Seyahat Sağlık Sigortası, yurt içi veya yurt dışı seyahatlerde oluşabilecek sağlık problemleri, kaza veya acil durumlar karşısında sigortalıyı teminat altına alan bir sigorta türüdür. Seyahat süresince meydana gelebilecek hastalık, yaralanma, tedavi ve ilaç masraflarını karşılamanın yanı sıra, bazı poliçelerde bagaj kaybı ve iptal güvencesi gibi ek teminatlar da bulunmaktadır."
+  },
+  {
+    "page": "index.html",
+    "id": "yabancisaglik",
+	"title": "Yabancı Sağlık Sigortası",
+    "text": "Yabancı Sağlık Sigortası, Türkiye’de ikamet eden yabancı uyruklu kişilerin sağlık ihtiyaçlarını güvence altına alan bir sigorta türüdür. Türkiye’de oturma izni almak isteyen yabancılar için zorunlu olan bu sigorta, hastalık ve kaza durumunda tedavi masraflarını kapsar. Anlaşmalı sağlık kuruluşlarında tedavi masraflarını karşılayarak yabancı vatandaşların sağlık hizmetlerinden kesintisiz faydalanmalarını sağlamaktadır."
+  },
+  {
+    "page": "index.html",
+    "id": "ferdikaza",
+	"title": "Ferdi Kaza Sigortası",
+    "text": "Ferdi Kaza Sigortası, sigortalının beklenmedik bir kaza sonucu yaşamını kaybetmesi veya kalıcı sakatlık durumunda finansal güvence sağlayan bir sigorta türüdür. Poliçede belirtilen teminatlar doğrultusunda, kaza sonucu vefat, sürekli sakatlık veya tedavi masraflarını karşılar. Sigortalının kendisi veya belirlediği lehtar, poliçede belirtilen teminat tutarı doğrultusunda maddi destek alır."
+  },
+ {
+    "page": "index.html",
+    "id": "kaskosigorta",
+	"title": "Kasko Sigortası",
+    "text": "Kasko Sigortası, araç sahiplerini kaza, çarpışma, hırsızlık, yangın, doğal afet ve benzeri durumlara karşı koruyan bir sigorta türüdür. Kapsamı, sigortalının tercihine göre genişletilebilir ve ek teminatlarla özelleştirilebilir. Kasko sigortası, aracın hasar görmesi veya çalınması durumunda oluşacak maddi zararları güvence altına alır. Poliçede belirtilen teminatlar dahilinde araç onarımı veya yenileme masraflarını karşılar."
+  },
+  {
+    "page": "index.html",
+    "id": "zorunlutrafik",
+	"title": "Zorunlu Trafik Sigortası",
+    "text": "Zorunlu Trafik Sigortası, trafiğe çıkan her aracın yaptırmak zorunda olduğu, üçüncü şahıslara verilen maddi ve bedeni zararları karşılayan bir sigorta türüdür. Kaza sonucunda karşı tarafın araç veya mülküne verilen zararların yanı sıra, yaralanma veya ölüm durumunda doğacak masrafları da poliçede belirtilen limitler dahilinde güvence altına alır. Bu sigorta, araç sahibinin sorumluluğunu hafifletirken, mağdur olan tarafın zararını tazmin etmeyi amaçlar."
+  },
+  {
+    "page": "index.html",
+    "id": "sorumluluk",
+	"title": "İMM(İhtiyari Mali Mesuliyet)",
+    "text": "İMM(İhtiyari Mali Mesuliyet) Sigortası, zorunlu trafik sigortasının limitlerinin yetersiz kaldığı durumlarda devreye giren ve ek mali sorumluluk teminatı sağlayan bir sigorta türüdür. Trafik kazası sonucu üçüncü kişilere verilen maddi ve bedeni zararlar, zorunlu trafik sigortası teminat limitlerini aştığında, İMM Sigortası bu ek zararı karşılar. Araç sahiplerinin daha geniş bir güvenceye sahip olmasını sağlar."
+  },
+  {
+    "page": "index.html",
+    "id": "yesilkart",
+	"title": "Yeşil Kart Sigortası",
+    "text": "Yeşil Kart Sigortası, uluslararası geçerliliği olan bir trafik sigortasıdır ve aracın yurt dışında, Yeşil Kart Sistemi’ne dahil ülkelerde kullanılması durumunda geçerli olur. Türkiye’de düzenlenen bu sigorta, yurt dışında meydana gelebilecek kazalarda üçüncü şahıslara verilebilecek maddi ve bedeni zararları karşılar. Özellikle Avrupa ve bazı Asya ülkelerinde zorunlu olan bu sigorta, uluslararası seyahatlerde güvence sağlar."
+  },
+  {
+    "page": "index.html",
+    "id": "yolyardim",
+	"title": "Yol Yardım Sigortası",
+    "text": "Yol Yardım Sigortası, aracın yolda arıza yapması, kaza geçirmesi veya herhangi bir teknik sorun yaşaması durumunda sigortalıya profesyonel destek sağlayan bir sigorta türüdür. Çekici hizmeti, lastik değişimi, akü takviyesi, yakıt takviyesi gibi hizmetler sunar. Bazı poliçelerde konaklama ve ulaşım masrafları gibi ek avantajlar da bulunur. Bu sigorta, aracın güvenli şekilde yola devam etmesini sağlar ve sürücüye yol boyunca güvence sunar."
+  },
+  {
+    "page": "index.html",
+    "id": "konut",
+	"title": "Konut Sigortası",
+    "text": "Konut Sigortası, evinizi ve içindeki eşyaları yangın, hırsızlık, su baskını, doğal afetler, terör, cam kırılması gibi risklere karşı güvence altına alan bir sigorta türüdür. Poliçeye eklenen teminatlarla konut içerisindeki elektronik eşyalar, dekorasyon ve değerli eşyalar da sigorta kapsamına alınabilir. Konut Sigortası, hem mülk sahipleri hem de kiracılar tarafından yaptırılabilir."
+  },
+  {
+    "page": "index.html",
+    "id": "dask",
+	"title": "DASK",
+    "text": "DASK, Türkiye’de deprem sonucu meydana gelebilecek maddi zararları güvence altına alan zorunlu bir sigorta türüdür. Deprem ve deprem kaynaklı yangın, patlama, yer kayması gibi risklere karşı binanın hasar görmesi durumunda maddi destek sağlar. DASK, hem bina hem de temelleri için teminat sunar ve tapu işlemleri için zorunlu tutulur."
+  },
+  {
+    "page": "index.html",
+    "id": "isyeri",
+	"title": "İşyeri Sigortası",
+    "text": "İşyeri Sigortası, ticari işletmeleri yangın, hırsızlık, su baskını, doğal afet, makine kırılması gibi risklere karşı koruyan bir sigorta türüdür. İşyerindeki demirbaşlar, makineler, elektronik cihazlar ve stoklar gibi varlıkları teminat altına alır. İşyerinin faaliyet alanına göre özel olarak düzenlenebilen bu poliçe, çalışan sorumluluk sigortası gibi ek teminatlar da içerebilir."
+  },
+  {
+    "page": "index.html",
+    "id": "yattekne",
+	"title": "Yat/Tekne Sigortası",
+    "text": "Yat/Tekne Sigortası, deniz taşıtlarını denizde, karada veya çekek yerinde meydana gelebilecek risklere karşı güvence altına alan bir sigorta türüdür. Deniz kazaları, hırsızlık, yangın, korsanlık gibi durumların yanı sıra üçüncü şahıslara verilebilecek zararları da teminat altına alır. Yat ve teknenin özelliklerine göre farklı teminat seçenekleri sunulabilir."
+  },
+  {
+    "page": "index.html",
+    "id": "meslekisorumluluk",
+	"title": "Mesleki Sorumluluk Sigortası",
+    "text": "Mesleki Sorumluluk Sigortası, bir profesyonelin mesleki faaliyetlerini yürütürken yapabileceği hatalar, ihmaller veya kusurlar nedeniyle üçüncü şahıslara verebileceği maddi ve manevi zararları karşılayan bir sigorta türüdür. Özellikle doktor, avukat, mühendis gibi meslek grupları tarafından tercih edilir. Hatalı uygulamalar veya hizmet eksikliklerinden kaynaklanabilecek tazminat taleplerini teminat altına alır."
+  },
+  {
+    "page": "index.html",
+    "id": "ucuncusahis",
+	"title": "Üçüncü Şahıs Mali Sorumluluk Sigortası",
+    "text": "Üçüncü Şahıs Mali Sorumluluk Sigortası, sigortalının üçüncü kişilere verebileceği bedeni veya maddi zararları güvence altına alan bir sigorta türüdür. İşletmelerde veya bireysel faaliyetlerde meydana gelebilecek kazalar sonucu oluşan zararların karşılanmasını sağlar. Özellikle işletme sahipleri ve meslek grupları tarafından tercih edilen bu sigorta, hukuki sorumlulukları hafifletir."
+  },
+  {
+    "page": "index.html",
+    "id": "bireysel",
+	"title": "Bireysel Emeklilik",
+    "text": "Bireysel Emeklilik, düzenli birikim yaparak emeklilik döneminde ek gelir elde etmeyi amaçlayan bir sigorta sistemidir. Katılımcının yaptığı katkı payı ödemeleri fonlarda değerlendirilir ve devlet katkısı ile desteklenir. Emeklilik döneminde toplu ödeme veya düzenli maaş şeklinde geri ödeme seçenekleri sunar."
+  },
+  {
+    "page": "index.html",
+    "id": "hayat",
+	"title": "Hayat Sigortası",
+    "text": "Hayat Sigortası, sigortalının vefatı veya belirli bir süre sonunda yaşaması durumunda, lehtarlarına veya kendisine maddi güvence sağlayan bir sigorta türüdür. Vefat teminatının yanı sıra hastalık, maluliyet ve kritik hastalık gibi ek teminatlar da sunabilir. Aileyi ve sevdiklerini maddi olarak koruma altına alarak güvence sağlar."
+  },
+  {
+    "page": "index.html",
+    "id": "alacak",
+	"title": "Alacak Sigortası",
+    "text": "Alacak Sigortası, işletmelerin müşterilerinden olan ticari alacaklarının tahsil edilememesi riskine karşı koruma sağlayan bir sigorta türüdür. Müşterilerin iflası veya ödeme güçlüğü yaşaması durumunda doğan maddi kayıpları poliçede belirtilen limitler dahilinde karşılar. Ticari faaliyetlerin sürekliliği için güvence sunar."
+  },
+  {
+    "page": "index.html",
+    "id": "evcilhayvan",
+	"title": "Evcil Hayvan Sigortası",
+    "text": "Evcil Hayvan Sigortası, kedi, köpek gibi evcil hayvanların hastalanması, yaralanması veya kaza geçirmesi durumunda veteriner masraflarını karşılayan bir sigorta türüdür. Aynı zamanda üçüncü şahıslara zarar vermesi durumunda oluşabilecek hukuki sorumlulukları da kapsayabilir. Evcil hayvan sahiplerine finansal güvence sağlayarak sevimli dostlarının sağlık hizmetlerinden yararlanmasını kolaylaştırır."
+  }
+]

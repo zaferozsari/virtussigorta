@@ -9,15 +9,56 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
+
     <header>
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://tr.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Tüm piyasaları TradingView üzerinden takip edin</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "description": "",
+      "proName": "FX:EURUSD"
+    },
+    {
+      "description": "",
+      "proName": "CAPITALCOM:GOLD"
+    },
+    {
+      "description": "",
+      "proName": "FOREXCOM:EURTRY"
+    },
+    {
+      "description": "",
+      "proName": "FX:USDTRY"
+    }
+  ],
+  "isTransparent": false,
+  "showSymbolLogo": false,
+  "colorTheme": "light",
+  "locale": "tr"
+}
+  </script>
+</div>
+
+<!-- TradingView Widget END -->
+
+   
+	
         <div class="container header-container">
             <a href="index.html" class="logo">
             <img src="logo.png" alt="Virtus Sigorta" class="logo-img">
         </a>
+
             <div class="menu-toggle">☰</div>
             <nav>
+					
                 <ul>
+
+
                     <li><a href="index.html">Ana Sayfa</a></li>
 					<li><a href="./hakkimizda.html">Hakkımızda</a></li>
                     <li class="dropdown">
@@ -36,30 +77,67 @@
 								   
                         </div>
                     </li>
-                    
+                  <li><a>						<!-- Mercek Butonu -->
+<button id="openSearch" class="search-icon-button">Sigorta Ara🔍</button>
+
+<!-- Arama Paneli -->
+<div id="searchOverlay" class="search-overlay">
+  <div class="search-box">
+    <span id="closeSearch" class="close-search">&times;</span>
+    <input type="text" id="searchInput" placeholder="Hangi sigorta?" />
+    <button onclick="searchFromJSON()">Ara</button>
+    <div id="searchResults" class="results-container"></div>
+  </div>
+</div></a></li>
                     <li><a href="iletisim.html">Bize Ulaşın</a></li>
+					
                 </ul>
             </nav>
         </div>
+
     </header>
 
     <div class="hero">
-        <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" loading="lazy">
+        <div class="slide active" style="background-image: url('./images/slider1.jpg')" loading="lazy">
             <div class="slide-content">
-                <h2>Profesyonel Acente Hizmetleri</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2>Ailenizin güveni, bizim önceliğimiz.</h2>
+                <p>Hayatın sürprizlerine karşı ailenizi ve geleceğinizi güvence altına alın.</p>
             </div>
         </div>
-        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" loading="lazy">
+        <div class="slide" style="background-image: url('./images/slider2.jpg')" loading="lazy">
             <div class="slide-content">
-                <h2>Aliquam laoreet</h2>
-                <p>Duis at imperdiet turpis. Mauris mattis risus ut ligula accumsan iaculis</p>
+                <h2>İhtiyacınız olduğunda yanınızdayız.</h2>
+                <p>Sağlığınızı güvence altına almak, sevdiklerinize vereceğiniz en değerli hediyedir.</p>
             </div>
         </div>
-        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1529369623266-f5264b696110?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" loading="lazy">
+        <div class="slide" style="background-image: url('./images/slider3.jpg" loading="lazy">
             <div class="slide-content">
-                <h2>Aenean tempor</h2>
-                <p>Curabitur placerat ipsum a urna porta, vel laoreet tellus gravida.</p>
+                <h2>Profesyonel çözümlerimizle yanınızdayız.</h2>
+                <p>Yaşam alanlarınızda beklenmedik risklere karşı önlemler alıyoruz.</p>
+            </div>
+        </div>
+		 <div class="slide" style="background-image: url('./images/slider4.jpg" loading="lazy">
+            <div class="slide-content">
+                <h2>Trafikteki ihtimalleri düşünerek, sizin için en uygun güvenceyi sunuyoruz.</h2>
+                <p></p>
+            </div>
+        </div>
+		<div class="slide" style="background-image: url('./images/slider5.jpg" loading="lazy">
+            <div class="slide-content">
+                <h2>Güvenli yarınlar için doğru adrestesiniz.</h2>
+                <p>Bireysel Emeklilik Sistemi ile geleceğinizi şimdiden planlayın.</p>
+            </div>
+        </div>
+		<div class="slide" style="background-image: url('./images/slider6.jpg" loading="lazy">
+            <div class="slide-content">
+                <h2>Seyahat sırasında olası sağlık risklerine karşı yanınızdayız.</h2>
+                <p></p>
+            </div>
+        </div>
+		<div class="slide" style="background-image: url('./images/slider7.jpg" loading="lazy">
+            <div class="slide-content">
+                <h2>Siz sadece rotanıza odaklanın.</h2>
+                <p>Yat ve Tekneleriniz için kapsamlı sigorta çözümlerimizle yanınızdayız.</p>
             </div>
         </div>
     </div>
@@ -69,48 +147,48 @@
         <h2 class="section-title" id="saglik">Sağlık Sigortaları</h2>
         <div class="services-grid">
             <div class="service-card">
-                <div class="service-img" style="background-image: url('https://img.freepik.com/free-photo/close-up-doctor-with-stethoscope_23-2149191355.jpg?t=st=1743768082~exp=1743771682~hmac=102240d4c20e3b2ecef479153ca2438350daebc30ab1c246a1ab7fb16a4813e3&w=1380')"></div>
+                <div class="service-img" style="background-image: url('./images/ozelsaglik.jpg')"></div>
                 <div class="service-content">
                     <h3>Özel Sağlık Sigortası</h3>
                     <p>Sigortalının hastalık veya kaza sonucu oluşabilecek sağlık giderlerini güvence altına alan bir sigorta türüdür.</p>
-                    <a href="#" class="view-details" data-title="Özel Sağlık Sigortası" data-img="https://img.freepik.com/free-photo/close-up-doctor-with-stethoscope_23-2149191355.jpg?t=st=1743768082~exp=1743771682~hmac=102240d4c20e3b2ecef479153ca2438350daebc30ab1c246a1ab7fb16a4813e3&w=1380" data-description="Özel Sağlık Sigortası, sigortalının hastalık veya kaza sonucu oluşabilecek sağlık giderlerini güvence altına alan bir sigorta türüdür. Sigortalının tercih ettiği poliçe kapsamına göre yatarak tedavi, ayakta tedavi, muayene, ameliyat, ilaç ve tetkik gibi sağlık hizmetlerini karşılamaktadır.
+                    <a href="#" class="view-details" data-title="Özel Sağlık Sigortası" data-img="./images/ozelsaglik.jpg" data-description="Özel Sağlık Sigortası, sigortalının hastalık veya kaza sonucu oluşabilecek sağlık giderlerini güvence altına alan bir sigorta türüdür. Sigortalının tercih ettiği poliçe kapsamına göre yatarak tedavi, ayakta tedavi, muayene, ameliyat, ilaç ve tetkik gibi sağlık hizmetlerini karşılamaktadır.
 Özel Sağlık Sigortası, kamu sağlık hizmetlerinden bağımsız olarak özel hastanelerde ve sağlık kuruluşlarında hızlı ve kaliteli hizmet alabilme imkanı sunar. Poliçe kapsamında yer alan anlaşmalı sağlık kurumlarında, sigortalıların tedavi masrafları doğrudan karşılanırken, anlaşmasız kurumlarda yapılan harcamalar ise belirlenen limitler dahilinde sigortalıya geri ödenebilir.
 Sigortalının sağlık ihtiyaçlarına ve bütçesine uygun çeşitli planlar sunan bu sigorta türü, hem bireysel hem de aile poliçesi olarak düzenlenebilmektedir.">İncele</a>
                 </div>
             </div>
-            <div class="service-card">
-                <div class="service-img" style="background-image: url('https://img.freepik.com/free-photo/front-view-doctor-holding-medical-element_23-2148854104.jpg?t=st=1743768126~exp=1743771726~hmac=8465b59dc123a6297c139226bdc22c5167d8824e510a19737c52abbd2c497836&w=1380')"></div>
+            <div class="service-card" id="tamamlayicisaglik">
+                <div class="service-img" style="background-image: url('./images/tamamlayicisaglik.jpg')"></div>
                 <div class="service-content">
                     <h3>Tamamlayıcı Sağlık Sigortası</h3>
                     <p>Sosyal Güvenlik Kurumu (SGK) ile anlaşmalı özel hastanelerde, SGK'nın karşıladığı sağlık giderlerinin üzerinde kalan fark ücretlerini güvence altına alan bir sigorta türüdür.</p>
-                    <a href="#" class="view-details" data-title="Tamamlayıcı Sağlık Sigortası" data-img="https://img.freepik.com/free-photo/front-view-doctor-holding-medical-element_23-2148854104.jpg?t=st=1743768126~exp=1743771726~hmac=8465b59dc123a6297c139226bdc22c5167d8824e510a19737c52abbd2c497836&w=1380" data-description="Tamamlayıcı Sağlık Sigortası, Sosyal Güvenlik Kurumu (SGK) ile anlaşmalı özel hastanelerde, SGK’nın karşıladığı sağlık giderlerinin üzerinde kalan fark ücretlerini güvence altına alan bir sigorta türüdür. Bu sayede, sigortalılar özel hastanelerde ek ödeme yapmadan sağlık hizmetlerinden yararlanabilir. Hem yatarak hem de ayakta tedavi masraflarını kapsayan planlarla, bütçeye uygun sağlık hizmeti alma imkanı sunmaktadır.">İncele</a>
+                    <a href="#" class="view-details" data-title="Tamamlayıcı Sağlık Sigortası" data-img="./images/tamamlayicisaglik.jpg" data-description="Tamamlayıcı Sağlık Sigortası, Sosyal Güvenlik Kurumu (SGK) ile anlaşmalı özel hastanelerde, SGK’nın karşıladığı sağlık giderlerinin üzerinde kalan fark ücretlerini güvence altına alan bir sigorta türüdür. Bu sayede, sigortalılar özel hastanelerde ek ödeme yapmadan sağlık hizmetlerinden yararlanabilir. Hem yatarak hem de ayakta tedavi masraflarını kapsayan planlarla, bütçeye uygun sağlık hizmeti alma imkanı sunmaktadır.">İncele</a>
                 </div>
             </div>
-            <div class="service-card">
-                <div class="service-img" style="background-image: url('https://img.freepik.com/free-photo/stethoscope-hugging-earth-blue-background_23-2148115639.jpg?t=st=1743768236~exp=1743771836~hmac=5355f2af8d4e0158d8961fa39dfa8b783cca408bc7c0278de0d126acc8811fb8&w=1380')"></div>
+            <div class="service-card" id="seyahatsaglik">
+                <div class="service-img" style="background-image: url('./images/seyahatsaglik.jpg"></div>
                 <div class="service-content">
                     <h3>Seyahat Sağlık Sigortası</h3>
-                    <p>Sosyal Güvenlik Kurumu (SGK) ile anlaşmalı özel hastanelerde, SGK'nın karşıladığı sağlık giderlerinin üzerinde kalan fark ücretlerini güvence altına alan bir sigorta türüdür.</p>
-                    <a href="#" class="view-details" data-title="Seyahat Sağlık Sigortası" data-img="https://img.freepik.com/free-photo/stethoscope-hugging-earth-blue-background_23-2148115639.jpg?t=st=1743768236~exp=1743771836~hmac=5355f2af8d4e0158d8961fa39dfa8b783cca408bc7c0278de0d126acc8811fb8&w=1380" data-description="Seyahat Sağlık Sigortası, yurt içi veya yurt dışı seyahatlerde oluşabilecek sağlık problemleri, kaza veya acil durumlar karşısında sigortalıyı teminat altına alan bir sigorta türüdür. Seyahat süresince meydana gelebilecek hastalık, yaralanma, tedavi ve ilaç masraflarını karşılamanın yanı sıra, bazı poliçelerde bagaj kaybı ve iptal güvencesi gibi ek teminatlar da bulunmaktadır.">İncele</a>
+                    <p>Seyahat Sağlık Sigortası, yurt içi veya yurt dışı seyahatlerde oluşabilecek sağlık problemleri, kaza veya acil durumlar karşısında sigortalıyı teminat altına alan bir sigorta türüdür. </p>
+                    <a href="#" class="view-details" data-title="Seyahat Sağlık Sigortası" data-img="./images/seyahatsaglik.jpg" data-description="Seyahat Sağlık Sigortası, yurt içi veya yurt dışı seyahatlerde oluşabilecek sağlık problemleri, kaza veya acil durumlar karşısında sigortalıyı teminat altına alan bir sigorta türüdür. Seyahat süresince meydana gelebilecek hastalık, yaralanma, tedavi ve ilaç masraflarını karşılamanın yanı sıra, bazı poliçelerde bagaj kaybı ve iptal güvencesi gibi ek teminatlar da bulunmaktadır.">İncele</a>
                 </div>
             </div>
         </div>
         <br>
-        <div class="services-grid">
+        <div class="services-grid" id="yabancisaglik">
             <div class="service-card">
-                <div class="service-img" style="background-image: url('https://img.freepik.com/free-photo/top-view-earth-globe-frame-with-stethoscope_23-2148557624.jpg?t=st=1743768957~exp=1743772557~hmac=6a7eb3a3498523027ef75d04d52f0494cbdc8977d05b2d8e79de3b48c0a66b46&w=1380')"></div>
+                <div class="service-img" style="background-image: url('./images/yabancisaglik.jpg"></div>
                 <div class="service-content">
                     <h3>Yabancı Sağlık Sigortası</h3>
                     <p>Türkiye'de ikamet eden yabancı uyruklu kişilerin sağlık ihtiyaçlarını güvence altına alan bir sigorta türüdür.</p>
-                    <a href="#" class="view-details" data-title="Yabancı Sağlık Sigortası" data-img="https://img.freepik.com/free-photo/top-view-earth-globe-frame-with-stethoscope_23-2148557624.jpg?t=st=1743768957~exp=1743772557~hmac=6a7eb3a3498523027ef75d04d52f0494cbdc8977d05b2d8e79de3b48c0a66b46&w=1380" data-description="Yabancı Sağlık Sigortası, Türkiye’de ikamet eden yabancı uyruklu kişilerin sağlık ihtiyaçlarını güvence altına alan bir sigorta türüdür. Türkiye’de oturma izni almak isteyen yabancılar için zorunlu olan bu sigorta, hastalık ve kaza durumunda tedavi masraflarını kapsar. Anlaşmalı sağlık kuruluşlarında tedavi masraflarını karşılayarak yabancı vatandaşların sağlık hizmetlerinden kesintisiz faydalanmalarını sağlamaktadır.">İncele</a>
+                    <a href="#" class="view-details" data-title="Yabancı Sağlık Sigortası" data-img="./images/yabancisaglik.jpg" data-description="Yabancı Sağlık Sigortası, Türkiye’de ikamet eden yabancı uyruklu kişilerin sağlık ihtiyaçlarını güvence altına alan bir sigorta türüdür. Türkiye’de oturma izni almak isteyen yabancılar için zorunlu olan bu sigorta, hastalık ve kaza durumunda tedavi masraflarını kapsar. Anlaşmalı sağlık kuruluşlarında tedavi masraflarını karşılayarak yabancı vatandaşların sağlık hizmetlerinden kesintisiz faydalanmalarını sağlamaktadır.">İncele</a>
                 </div>
             </div>
-            <div class="service-card">
-                <div class="service-img" style="background-image: url('https://img.freepik.com/free-photo/people-with-home-safety-concept_53876-30626.jpg?t=st=1743769109~exp=1743772709~hmac=2dd6bf8d46a56228ee641abd31be95857c3bd1cc2b73f92c97547d832e39db9b&w=1380')"></div>
+            <div class="service-card" id="ferdikaza">
+                <div class="service-img" style="background-image: url('./images/ferdikaza.jpg"></div>
                 <div class="service-content">
                     <h3>Ferdi Kaza Sigortası</h3>
                     <p>Sigortalının beklenmedik bir kaza sonucu yaşamını kaybetmesi veya kalıcı sakatlık durumunda finansal güvence sağlayan bir sigorta türüdür.</p>
-                    <a href="#" class="view-details" data-title="Ferdi Kaza Sigortası" data-img="https://img.freepik.com/free-photo/people-with-home-safety-concept_53876-30626.jpg?t=st=1743769109~exp=1743772709~hmac=2dd6bf8d46a56228ee641abd31be95857c3bd1cc2b73f92c97547d832e39db9b&w=1380" data-description="Ferdi Kaza Sigortası, sigortalının beklenmedik bir kaza sonucu yaşamını kaybetmesi veya kalıcı sakatlık durumunda finansal güvence sağlayan bir sigorta türüdür. Poliçede belirtilen teminatlar doğrultusunda, kaza sonucu vefat, sürekli sakatlık veya tedavi masraflarını karşılar. Sigortalının kendisi veya belirlediği lehtar, poliçede belirtilen teminat tutarı doğrultusunda maddi destek alır.">İncele</a>
+                    <a href="#" class="view-details" data-title="Ferdi Kaza Sigortası" data-img="./images/ferdikaza.jpg" data-description="Ferdi Kaza Sigortası, sigortalının beklenmedik bir kaza sonucu yaşamını kaybetmesi veya kalıcı sakatlık durumunda finansal güvence sağlayan bir sigorta türüdür. Poliçede belirtilen teminatlar doğrultusunda, kaza sonucu vefat, sürekli sakatlık veya tedavi masraflarını karşılar. Sigortalının kendisi veya belirlediği lehtar, poliçede belirtilen teminat tutarı doğrultusunda maddi destek alır.">İncele</a>
                 </div>
             </div>
         </div>
@@ -120,15 +198,15 @@ Sigortalının sağlık ihtiyaçlarına ve bütçesine uygun çeşitli planlar s
 				<section class="container">
             <h2 class="section-title" id="otokaza">Oto/Kaza Sigortaları</h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1558898268-92ae44e7670e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+                <div class="service-card" id="kaskosigorta">
+                    <div class="service-img" style="background-image: url('./images/kasko.jpg"></div>
                     <div class="service-content">
                         <h3>Kasko Sigortası</h3>
                        <p>Araç sahiplerini kaza, çarpışma, hırsızlık, yangın, doğal afet ve benzeri durumlara karşı koruyan bir sigorta türüdür.</p> 
-						<a href="#" class="view-details" data-title="Kasko Sigortası" data-img="https://images.unsplash.com/photo-1558898268-92ae44e7670e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-description="Kasko Sigortası, araç sahiplerini kaza, çarpışma, hırsızlık, yangın, doğal afet ve benzeri durumlara karşı koruyan bir sigorta türüdür. Kapsamı, sigortalının tercihine göre genişletilebilir ve ek teminatlarla özelleştirilebilir. Kasko sigortası, aracın hasar görmesi veya çalınması durumunda oluşacak maddi zararları güvence altına alır. Poliçede belirtilen teminatlar dahilinde araç onarımı veya yenileme masraflarını karşılar.">İncele</a>                 
+						<a href="#" class="view-details" data-title="Kasko Sigortası" data-img="./images/kasko.jpg" data-description="Kasko Sigortası, araç sahiplerini kaza, çarpışma, hırsızlık, yangın, doğal afet ve benzeri durumlara karşı koruyan bir sigorta türüdür. Kapsamı, sigortalının tercihine göre genişletilebilir ve ek teminatlarla özelleştirilebilir. Kasko sigortası, aracın hasar görmesi veya çalınması durumunda oluşacak maddi zararları güvence altına alır. Poliçede belirtilen teminatlar dahilinde araç onarımı veya yenileme masraflarını karşılar.">İncele</a>                 
 					</div>
                 </div>
-                <div class="service-card">
+                <div class="service-card" id="zorunlutrafik">
                     <div class="service-img" style="background-image: url('https://img.freepik.com/free-photo/emergency-sign-with-black-car-background_23-2148257989.jpg?t=st=1743769606~exp=1743773206~hmac=c250a817d2f21c305acbba2ca72608ad33ce3640f3f5b19799ad2a964c12df47&w=740"></div>
                     <div class="service-content">
                         <h3>Zorunlu Trafik Sigortası</h3>
@@ -137,30 +215,30 @@ Sigortalının sağlık ihtiyaçlarına ve bütçesine uygun çeşitli planlar s
                     </div>
                 </div>
                 <div class="service-card"  id="sorumluluk">
-                    <div class="service-img" style="background-image: url('https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041842.jpg?t=st=1743770166~exp=1743773766~hmac=dd83610a024b6a39270775374e1ca131a5e62b78daa9df986b617d236d71a3ac&w=1380')"></div>
+                    <div class="service-img" style="background-image: url('./images/imm.jpg"></div>
                     <div class="service-content">
                         <h3>İMM(İhtiyari Mali Mesuliyet) </h3>
                         <p>Zorunlu trafik sigortasının limitlerinin yetersiz kaldığı durumlarda devreye giren ve ek mali sorumluluk teminatı sağlayan bir sigorta türüdür.</p> 
-						<a href="#" class="view-details" data-title="İMM(İhtiyari Mali Mesuliyet) " data-img="https://img.freepik.com/free-photo/emergency-sign-with-black-car-background_23-2148257989.jpg?t=st=1743769606~exp=1743773206~hmac=c250a817d2f21c305acbba2ca72608ad33ce3640f3f5b19799ad2a964c12df47&w=740" data-description="İMM Sigortası, zorunlu trafik sigortasının limitlerinin yetersiz kaldığı durumlarda devreye giren ve ek mali sorumluluk teminatı sağlayan bir sigorta türüdür. Trafik kazası sonucu üçüncü kişilere verilen maddi ve bedeni zararlar, zorunlu trafik sigortası teminat limitlerini aştığında, İMM Sigortası bu ek zararı karşılar. Araç sahiplerinin daha geniş bir güvenceye sahip olmasını sağlar.">İncele</a>
+						<a href="#" class="view-details" data-title="İMM(İhtiyari Mali Mesuliyet) " data-img="./images/imm.jpg" data-description="İMM Sigortası, zorunlu trafik sigortasının limitlerinin yetersiz kaldığı durumlarda devreye giren ve ek mali sorumluluk teminatı sağlayan bir sigorta türüdür. Trafik kazası sonucu üçüncü kişilere verilen maddi ve bedeni zararlar, zorunlu trafik sigortası teminat limitlerini aştığında, İMM Sigortası bu ek zararı karşılar. Araç sahiplerinin daha geniş bir güvenceye sahip olmasını sağlar.">İncele</a>
                     </div>
                 </div>
            </div>
 		   <br>
 			 <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
-                    <div class="service-content" >
+                <div class="service-card" id="yesilkart">
+                    <div class="service-img" style="background-image: url('./images/yesilkart.jpg"></div>
+                    <div class="service-content">
                         <h3>Yeşil Kart Sigortası</h3>
 						<p>Uluslararası geçerliliği olan bir trafik sigortasıdır ve aracın yurt dışında, Yeşil Kart Sistemi’ne dahil ülkelerde kullanılması durumunda geçerli olur.</p> 
-						<a href="#" class="view-details" data-title="Yeşil Kart Sigortası" data-img="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-description="Yeşil Kart Sigortası, uluslararası geçerliliği olan bir trafik sigortasıdır ve aracın yurt dışında, Yeşil Kart Sistemi’ne dahil ülkelerde kullanılması durumunda geçerli olur. Türkiye’de düzenlenen bu sigorta, yurt dışında meydana gelebilecek kazalarda üçüncü şahıslara verilebilecek maddi ve bedeni zararları karşılar. Özellikle Avrupa ve bazı Asya ülkelerinde zorunlu olan bu sigorta, uluslararası seyahatlerde güvence sağlar.">İncele</a>
+						<a href="#" class="view-details" data-title="Yeşil Kart Sigortası" data-img="./images/yesilkart.jpg" data-description="Yeşil Kart Sigortası, uluslararası geçerliliği olan bir trafik sigortasıdır ve aracın yurt dışında, Yeşil Kart Sistemi’ne dahil ülkelerde kullanılması durumunda geçerli olur. Türkiye’de düzenlenen bu sigorta, yurt dışında meydana gelebilecek kazalarda üçüncü şahıslara verilebilecek maddi ve bedeni zararları karşılar. Özellikle Avrupa ve bazı Asya ülkelerinde zorunlu olan bu sigorta, uluslararası seyahatlerde güvence sağlar.">İncele</a>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://plus.unsplash.com/premium_photo-1661964084829-69f889505c00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+                <div class="service-card" id="yolyardim">
+                    <div class="service-img" style="background-image: url('./images/yolyardim.jpg')"></div>
                     <div class="service-content">
                         <h3>Yol Yardım Sigortası</h3>
 						<p>Aracın yolda arıza yapması, kaza geçirmesi veya herhangi bir teknik sorun yaşaması durumunda sigortalıya profesyonel destek sağlayan bir sigorta türüdür.</p> 
-						<a href="#" class="view-details" data-title="Yol Yardım Sigortası" data-img="https://plus.unsplash.com/premium_photo-1661964084829-69f889505c00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-description="Yol Yardım Sigortası, aracın yolda arıza yapması, kaza geçirmesi veya herhangi bir teknik sorun yaşaması durumunda sigortalıya profesyonel destek sağlayan bir sigorta türüdür. Çekici hizmeti, lastik değişimi, akü takviyesi, yakıt takviyesi gibi hizmetler sunar. Bazı poliçelerde konaklama ve ulaşım masrafları gibi ek avantajlar da bulunur. Bu sigorta, aracın güvenli şekilde yola devam etmesini sağlar ve sürücüye yol boyunca güvence sunar.">İncele</a>
+						<a href="#" class="view-details" data-title="Yol Yardım Sigortası" data-img="./images/yolyardim.jpg" data-description="Yol Yardım Sigortası, aracın yolda arıza yapması, kaza geçirmesi veya herhangi bir teknik sorun yaşaması durumunda sigortalıya profesyonel destek sağlayan bir sigorta türüdür. Çekici hizmeti, lastik değişimi, akü takviyesi, yakıt takviyesi gibi hizmetler sunar. Bazı poliçelerde konaklama ve ulaşım masrafları gibi ek avantajlar da bulunur. Bu sigorta, aracın güvenli şekilde yola devam etmesini sağlar ve sürücüye yol boyunca güvence sunar.">İncele</a>
                     </div>
                 </div>
 			 </div>
@@ -170,20 +248,20 @@ Sigortalının sağlık ihtiyaçlarına ve bütçesine uygun çeşitli planlar s
 				<section class="container">
             <h2 class="section-title" id="konutdask">Konut/DASK Sigortaları</h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://img.freepik.com/free-photo/close-up-hands-with-family-figure-concept_23-2148488290.jpg?t=st=1743771572~exp=1743775172~hmac=8a47624ef8d3bb725f20445a55dae24aa3f20d9f898e4031f89881de2d4f79b9&w=1380"></div>
+                <div class="service-card" id="konut">
+                    <div class="service-img" style="background-image: url('./images/konut.jpg"></div>
                     <div class="service-content">
                         <h3>Konut Sigortası</h3>
                        <p>Evinizi ve içindeki eşyaları yangın, hırsızlık, su baskını, doğal afetler, terör, cam kırılması gibi risklere karşı güvence altına alan bir sigorta türüdür.</p>
-					   <a href="#" class="view-details" data-title="Konut Sigortası" data-img="https://img.freepik.com/free-photo/close-up-hands-with-family-figure-concept_23-2148488290.jpg?t=st=1743771572~exp=1743775172~hmac=8a47624ef8d3bb725f20445a55dae24aa3f20d9f898e4031f89881de2d4f79b9&w=1380" data-description="Konut Sigortası, evinizi ve içindeki eşyaları yangın, hırsızlık, su baskını, doğal afetler, terör, cam kırılması gibi risklere karşı güvence altına alan bir sigorta türüdür. Poliçeye eklenen teminatlarla konut içerisindeki elektronik eşyalar, dekorasyon ve değerli eşyalar da sigorta kapsamına alınabilir. Konut Sigortası, hem mülk sahipleri hem de kiracılar tarafından yaptırılabilir.">İncele</a>
+					   <a href="#" class="view-details" data-title="Konut Sigortası" data-img="./images/konut.jpg" data-description="Konut Sigortası, evinizi ve içindeki eşyaları yangın, hırsızlık, su baskını, doğal afetler, terör, cam kırılması gibi risklere karşı güvence altına alan bir sigorta türüdür. Poliçeye eklenen teminatlarla konut içerisindeki elektronik eşyalar, dekorasyon ve değerli eşyalar da sigorta kapsamına alınabilir. Konut Sigortası, hem mülk sahipleri hem de kiracılar tarafından yaptırılabilir.">İncele</a>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1740921303432-e6eb995082aa?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+                <div class="service-card" id="dask">
+                    <div class="service-img" style="background-image: url('./images/dask.jpg"></div>
                     <div class="service-content">
                         <h3>DASK</h3>
                         <p>Türkiye’de deprem sonucu meydana gelebilecek maddi zararları güvence altına alan zorunlu bir sigorta türüdür.</p>
-						<a href="#" class="view-details" data-title="DASK" data-img="https://images.unsplash.com/photo-1740921303432-e6eb995082aa?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-description="DASK, Türkiye’de deprem sonucu meydana gelebilecek maddi zararları güvence altına alan zorunlu bir sigorta türüdür. Deprem ve deprem kaynaklı yangın, patlama, yer kayması gibi risklere karşı binanın hasar görmesi durumunda maddi destek sağlar. DASK, hem bina hem de temelleri için teminat sunar ve tapu işlemleri için zorunlu tutulur.">İncele</a>						
+						<a href="#" class="view-details" data-title="DASK" data-img="./images/dask.jpg" data-description="DASK, Türkiye’de deprem sonucu meydana gelebilecek maddi zararları güvence altına alan zorunlu bir sigorta türüdür. Deprem ve deprem kaynaklı yangın, patlama, yer kayması gibi risklere karşı binanın hasar görmesi durumunda maddi destek sağlar. DASK, hem bina hem de temelleri için teminat sunar ve tapu işlemleri için zorunlu tutulur.">İncele</a>						
                     </div>
                 </div>
              
@@ -197,30 +275,30 @@ Sigortalının sağlık ihtiyaçlarına ve bütçesine uygun çeşitli planlar s
 			<h2 class="section-title">Diğer Sigortalar</h2>
             <div class="services-grid">
                 <div class="service-card" id="isyeri">
-                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1431540015161-0bf868a2d407?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+                    <div class="service-img" style="background-image: url('./images/isyeri.jpg"></div>
                     <div class="service-content">
                         <h3>İşyeri Sigortası</h3>
                        <p>Ticari işletmeleri yangın, hırsızlık, su baskını, doğal afet, makine kırılması gibi risklere karşı koruyan bir sigorta türüdür.</p> 
-					   <a href="#" class="view-details" data-title="İşyeri Sigortası" data-img="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-description="İşyeri Sigortası, ticari işletmeleri yangın, hırsızlık, su baskını, doğal afet, makine kırılması gibi risklere karşı koruyan bir sigorta türüdür. İşyerindeki demirbaşlar, makineler, elektronik cihazlar ve stoklar gibi varlıkları teminat altına alır. İşyerinin faaliyet alanına göre özel olarak düzenlenebilen bu poliçe, çalışan sorumluluk sigortası gibi ek teminatlar da içerebilir">İncele</a>	
+					   <a href="#" class="view-details" data-title="İşyeri Sigortası" data-img="./images/isyeri.jpg" data-description="İşyeri Sigortası, ticari işletmeleri yangın, hırsızlık, su baskını, doğal afet, makine kırılması gibi risklere karşı koruyan bir sigorta türüdür. İşyerindeki demirbaşlar, makineler, elektronik cihazlar ve stoklar gibi varlıkları teminat altına alır. İşyerinin faaliyet alanına göre özel olarak düzenlenebilen bu poliçe, çalışan sorumluluk sigortası gibi ek teminatlar da içerebilir.">İncele</a>	
                     </div>
                 </div>
                 <div class="service-card" id="yattekne">
-                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1651821949453-f11a1ddfaf1a?q=80&w=2104&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+                    <div class="service-img" style="background-image: url('./images/yattekne.jpg"></div>
                     <div class="service-content">
                         <h3>Yat/Tekne Sigortası</h3>
                         <p>Deniz taşıtlarını denizde, karada veya çekek yerinde meydana gelebilecek risklere karşı güvence altına alan bir sigorta türüdür.</p>
-						<a href="#" class="view-details" data-title="Yat/Tekne Sigortası" data-img="https://images.unsplash.com/photo-1651821949453-f11a1ddfaf1a?q=80&w=2104&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-description="Yat/Tekne Sigortası, deniz taşıtlarını denizde, karada veya çekek yerinde meydana gelebilecek risklere karşı güvence altına alan bir sigorta türüdür. Deniz kazaları, hırsızlık, yangın, korsanlık gibi durumların yanı sıra üçüncü şahıslara verilebilecek zararları da teminat altına alır. Yat ve teknenin özelliklerine göre farklı teminat seçenekleri sunulabilir">İncele</a>	
+						<a href="#" class="view-details" data-title="Yat/Tekne Sigortası" data-img="./images/yattekne.jpg" data-description="Yat/Tekne Sigortası, deniz taşıtlarını denizde, karada veya çekek yerinde meydana gelebilecek risklere karşı güvence altına alan bir sigorta türüdür. Deniz kazaları, hırsızlık, yangın, korsanlık gibi durumların yanı sıra üçüncü şahıslara verilebilecek zararları da teminat altına alır. Yat ve teknenin özelliklerine göre farklı teminat seçenekleri sunulabilir.">İncele</a>	
                     </div>
                 </div>
-                <div class="service-card" >
-                    <div class="service-img" style="background-image: url('https://img.freepik.com/free-photo/top-view-businessman-analyzing-financial-documents-discussing-company-strategy_482257-17639.jpg?t=st=1743772773~exp=1743776373~hmac=112a7c433199cce606389034cc9264c105dbe1a318998bf1994fa20ee8d2d62e&w=1380')"></div>
+                <div class="service-card" id="meslekisorumluluk">
+                    <div class="service-img" style="background-image: url('./images/meslekisorumluluk.png')"></div>
                     <div class="service-content">
                         <h3>Mesleki Sorumluluk Sigortası</h3>
                         <p>Bir profesyonelin mesleki faaliyetlerini yürütürken yapabileceği hatalar, ihmaller veya kusurlar nedeniyle üçüncü şahıslara verebileceği maddi ve manevi zararları karşılayan bir sigorta türüdür.</p>
-						<a href="#" class="view-details" data-title="Mesleki Sorumluluk Sigortası" data-img="https://img.freepik.com/free-photo/top-view-businessman-analyzing-financial-documents-discussing-company-strategy_482257-17639.jpg?t=st=1743772773~exp=1743776373~hmac=112a7c433199cce606389034cc9264c105dbe1a318998bf1994fa20ee8d2d62e&w=1380" data-description="Mesleki Sorumluluk Sigortası, bir profesyonelin mesleki faaliyetlerini yürütürken yapabileceği hatalar, ihmaller veya kusurlar nedeniyle üçüncü şahıslara verebileceği maddi ve manevi zararları karşılayan bir sigorta türüdür. Özellikle doktor, avukat, mühendis gibi meslek grupları tarafından tercih edilir. Hatalı uygulamalar veya hizmet eksikliklerinden kaynaklanabilecek tazminat taleplerini teminat altına alır.">İncele</a>							
+						<a href="#" class="view-details" data-title="Mesleki Sorumluluk Sigortası" data-img="./images/meslekisorumluluk.png" data-description="Mesleki Sorumluluk Sigortası, bir profesyonelin mesleki faaliyetlerini yürütürken yapabileceği hatalar, ihmaller veya kusurlar nedeniyle üçüncü şahıslara verebileceği maddi ve manevi zararları karşılayan bir sigorta türüdür. Özellikle doktor, avukat, mühendis gibi meslek grupları tarafından tercih edilir. Hatalı uygulamalar veya hizmet eksikliklerinden kaynaklanabilecek tazminat taleplerini teminat altına alır.">İncele</a>							
                     </div>
                 </div>
-				<div class="service-card">
+				<div class="service-card" id="ucuncusahis">
                     <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
                     <div class="service-content">
                         <h3>Üçüncü Şahıs Mali Sorumluluk Sigortası</h3>
@@ -245,19 +323,19 @@ Sigortalının sağlık ihtiyaçlarına ve bütçesine uygun çeşitli planlar s
                     </div>
                 </div>
 				<div class="service-card" id="alacak">
-                    <div class="service-img" style="background-image: url('https://img.freepik.com/free-photo/business-people-shaking-hands-finishing-up-meeting_1150-37745.jpg?t=st=1743777986~exp=1743781586~hmac=03b85ecf50dc480d880b090985341a111032172098c606ebcb7f89558f21674b&w=1380')"></div>
+                    <div class="service-img" style="background-image: url('./images/alacak.jpg')"></div>
                     <div class="service-content">
                         <h3>Alacak Sigortası</h3>
                         <p>İşletmelerin müşterilerinden olan ticari alacaklarının tahsil edilememesi riskine karşı koruma sağlayan bir sigorta türüdür.</p>
-						<a href="#" class="view-details" data-title="Alacak Sigortası" data-img="https://img.freepik.com/free-photo/business-people-shaking-hands-finishing-up-meeting_1150-37745.jpg?t=st=1743777986~exp=1743781586~hmac=03b85ecf50dc480d880b090985341a111032172098c606ebcb7f89558f21674b&w=1380" data-description="Alacak Sigortası, işletmelerin müşterilerinden olan ticari alacaklarının tahsil edilememesi riskine karşı koruma sağlayan bir sigorta türüdür. Müşterilerin iflası veya ödeme güçlüğü yaşaması durumunda doğan maddi kayıpları poliçede belirtilen limitler dahilinde karşılar. Ticari faaliyetlerin sürekliliği için güvence sunar.">İncele</a>						
+						<a href="#" class="view-details" data-title="Alacak Sigortası" data-img="./images/alacak.jpg" data-description="Alacak Sigortası, işletmelerin müşterilerinden olan ticari alacaklarının tahsil edilememesi riskine karşı koruma sağlayan bir sigorta türüdür. Müşterilerin iflası veya ödeme güçlüğü yaşaması durumunda doğan maddi kayıpları poliçede belirtilen limitler dahilinde karşılar. Ticari faaliyetlerin sürekliliği için güvence sunar.">İncele</a>						
                     </div>
                 </div>
 				<div class="service-card" id="evcilhayvan">
-                    <div class="service-img" style="background-image: url('https://img.freepik.com/free-photo/top-view-hands-protecting-paw-print-animal-day_23-2148668906.jpg?t=st=1743778064~exp=1743781664~hmac=5f2efbc8f50c066544aa5c99fa24ad0d4ac7388c97a2748084555aa6fb626cb1&w=996')"></div>
+                    <div class="service-img" style="background-image: url('./images/evcilhayvan.jpg')"></div>
                     <div class="service-content">
                         <h3>Evcil Hayvan Sigortası</h3>
                         <p>Kedi, köpek gibi evcil hayvanların hastalanması, yaralanması veya kaza geçirmesi durumunda veteriner masraflarını karşılayan bir sigorta türüdür.</p>
-						<a href="#" class="view-details" data-title="Evcil Hayvan Sigortası" data-img="https://img.freepik.com/free-photo/top-view-hands-protecting-paw-print-animal-day_23-2148668906.jpg?t=st=1743778064~exp=1743781664~hmac=5f2efbc8f50c066544aa5c99fa24ad0d4ac7388c97a2748084555aa6fb626cb1&w=996" data-description="Evcil Hayvan Sigortası, kedi, köpek gibi evcil hayvanların hastalanması, yaralanması veya kaza geçirmesi durumunda veteriner masraflarını karşılayan bir sigorta türüdür. Aynı zamanda üçüncü şahıslara zarar vermesi durumunda oluşabilecek hukuki sorumlulukları da kapsayabilir. Evcil hayvan sahiplerine finansal güvence sağlayarak sevimli dostlarının sağlık hizmetlerinden yararlanmasını kolaylaştırır.">İncele</a>						
+						<a href="#" class="view-details" data-title="Evcil Hayvan Sigortası" data-img="./images/evcilhayvan.jpg" data-description="Evcil Hayvan Sigortası, kedi, köpek gibi evcil hayvanların hastalanması, yaralanması veya kaza geçirmesi durumunda veteriner masraflarını karşılayan bir sigorta türüdür. Aynı zamanda üçüncü şahıslara zarar vermesi durumunda oluşabilecek hukuki sorumlulukları da kapsayabilir. Evcil hayvan sahiplerine finansal güvence sağlayarak sevimli dostlarının sağlık hizmetlerinden yararlanmasını kolaylaştırır.">İncele</a>						
                     </div>
                 </div>
            </div>
@@ -292,22 +370,24 @@ Sigortalının sağlık ihtiyaçlarına ve bütçesine uygun çeşitli planlar s
 
 <ul class="dropdown-menu">
     <li><p><a href="index.html#saglik">Sağlık Sigortası</a></p></li>
-    <li><p><a href="index.html#kasko">Oto/Kaza Sigortası</a></p></li>
-    <li><p><a href="index.html#trafik">Konut/DASK Sigortası</a></p></li>
-    <li><p><a href="index.html#konut">İşyeri Sigortası</a></p></li>
+    <li><p><a href="index.html#otokaza">Oto/Kaza Sigortası</a></p></li>
+    <li><p><a href="index.html#konutdask">Konut/DASK Sigortası</a></p></li>
+    <li><p><a href="index.html#isyeri">İşyeri Sigortası</a></p></li>
     
     <!-- Gizli öğeler -->
     <div class="hidden-items" style="display:none;">
-        <li><p><a href="index.html#dask">Dask</a></p></li>
-        <li><p><a href="index.html#isyeri">İş Yeri</a></p></li>
-        <li><p><a href="index.html#tekne">Tekne ve Deniz Taşıtı</a></p></li>
-        <li><p><a href="index.html#iskazasi">İş Kazası ve Meslek Hastalıkları Sigortası</a></p></li>
-        <li><p><a href="index.html#seyahat">Seyahat</a></p></li>
-        <li><p><a href="index.html#bireyselemeklilik">Bireysel Emeklilik</a></p></li>
-        <li><p><a href="index.html#hayat">Hayat</a></p></li>
-        <li><p><a href="index.html#evcilhayvan">Evcil Hayvan Sigortası</a></p></li>
+        <li><p><a href="./index.html#yattekne">Yat/Tekne Sigortası</a></p></li>
+        <li><p><a href="./index.html#sorumluluk">Sorumluluk Sigortası</a></p></li>
+        <li><p><a href="./index.html#bireysel">Bireysel Emeklilik</a></p></li>
+        <li><p><a href="./index.html#hayat">Hayat Sigortası</a></p></li>
+        <li><p><a href="./index.html#alacak">Alacak Sigortası</a></p></li>
+        <li><p><a href="./index.html#evcilhayvan">Evcil Hayvan Sigortası</a></p></li>
     </div>
     
+	
+	  
+								
+	
     <!-- Devamını Göster/Gizle Butonu -->
     <li class="toggle-button">
         <button onclick="toggleItems()">Tümünü Göster</button>
@@ -322,15 +402,15 @@ Sigortalının sağlık ihtiyaçlarına ve bütçesine uygun çeşitli planlar s
 				İç Kapı No: 124 Kartalkule, 34870 
 				Kartal / İstanbul</p>
                     <p><strong>Telefon:</strong> (0216) 999 44 69</p>
-                <p><strong>E-Posta:</strong> info@virtussigorta.com</p>
+                <p><strong>E-Posta:</strong> info@virtussigorta.com.tr</p>
                 <p><strong>Çalışma Saatleri:</strong></p>
-				<p>Pazartesi - Cuma: 09:00 - 18:00</p>
+				<p>Pazartesi - Cuma: 09:00 - 18:30</p>
                 </div>
             </div>
             <div class="copyright">
 			<p>
 			<a href="./kvkk-aydinlatma-metni.pdf" target="_blank">KVKK Aydınlatma Metni</a> 
-                <p>Copyright © 2025 Virtus Sigorta Aracılık Hizmetleri Ltd. Şti. Tüm hakları saklıdır.</p>
+                <p>Copyright © 2025 Virtus Sigorta Aracılık Hizmetleri Ltd. Şti. tüm hakları saklıdır.</p>
             </div>
         </div>
     </footer>
@@ -341,168 +421,8 @@ Sigortalının sağlık ihtiyaçlarına ve bütçesine uygun çeşitli planlar s
   </button>
 </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Modal açma işlevi
-            const viewDetailsButtons = document.querySelectorAll('.view-details');
-            const modalOverlay = document.getElementById('serviceModal');
-            const modalHeader = document.getElementById('modalHeader');
-            const modalTitle = document.getElementById('modalTitle');
-            const modalDescription = document.getElementById('modalDescription');
-            const closeModal = document.getElementById('closeModal');
-            
-            viewDetailsButtons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    // Butondan verileri al
-                    const title = this.getAttribute('data-title');
-                    const img = this.getAttribute('data-img');
-                    const description = this.getAttribute('data-description');
-                    
-                    // Modal içeriğini güncelle
-                    modalHeader.style.backgroundImage = `url('${img}')`;
-                    modalTitle.textContent = title;
-                    modalDescription.textContent = description;
-                    
-                    // Modalı göster
-                    modalOverlay.style.display = 'block';
-                    document.body.style.overflow = 'hidden';
-                });
-            });
-            
-            // Modal kapatma işlevi
-            closeModal.addEventListener('click', function() {
-                modalOverlay.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            });
-            
-            // Dışarı tıklayarak kapatma
-            modalOverlay.addEventListener('click', function(e) {
-                if (e.target === modalOverlay) {
-                    modalOverlay.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-            });
-        });
-    </script>
-    <script>
-	
+<script src="./script.js"></script>
 
-	
-document.addEventListener("DOMContentLoaded", function() {
-  const links = document.querySelectorAll("a[href*='#']"); // Tüm hash içeren linkler
-
-  links.forEach(link => {
-    link.addEventListener("click", function(event) {
-      // Harici linkleri pas geç
-      if (this.origin !== window.location.origin) return;
-      
-      const href = this.getAttribute('href');
-      // Sadece hash içeren linkleri işle
-      if (!href.includes('#')) return;
-
-      const targetId = href.split('#')[1];
-      if (!targetId) return;
-
-      const targetElement = document.getElementById(targetId);
-      if (!targetElement) {
-        console.warn(`Hedef element bulunamadı: #${targetId}`);
-        return; // Element yoksa normal navigasyona izin ver
-      }
-
-      event.preventDefault();
-      
-      // Dinamik offset hesaplama (header yüksekliği + 20px boşluk)
-      const header = document.querySelector('header');
-      const offset = header ? header.offsetHeight + 20 : 80;
-      
-      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
-      
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
-
-      // URL'de hash güncelle (tarayıcı geçmişi için)
-      history.pushState(null, null, `#${targetId}`);
-    });
-  });
-});
-
-        // Mobile Menu Toggle
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('nav').classList.toggle('active');
-        });
-
-        // Dropdown Menu for Mobile
-        const dropdowns = document.querySelectorAll('.dropdown');
-        dropdowns.forEach(dropdown => {
-            dropdown.addEventListener('click', function(e) {
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    this.classList.toggle('active');
-                }
-            });
-        });
-
-        // Hero Slider
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        
-        function showSlide(n) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            currentSlide = (n + slides.length) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
-        
-        function nextSlide() {
-            showSlide(currentSlide + 1);
-        }
-        
-        // Change slide every 5 seconds
-        setInterval(nextSlide, 4000);
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
- 
-		function toggleItems() {
-    const hiddenItems = document.querySelector('.hidden-items');
-    const button = document.querySelector('.toggle-button button');
-    
-    if (hiddenItems.style.display === "none") {
-        hiddenItems.style.display = "block";
-        button.textContent = "▲";
-    } else {
-        hiddenItems.style.display = "none";
-        button.textContent = "Tümünü Göster";
-    }
-}
-
-		
-    </script>
-	<script>
-
-  document.addEventListener("DOMContentLoaded", function () {
-    if (!localStorage.getItem("cookieConsent")) {
-      document.getElementById("cookie-consent").style.display = "block";
-    }
-
-    document.getElementById("accept-cookie").addEventListener("click", function () {
-      localStorage.setItem("cookieConsent", true);
-      document.getElementById("cookie-consent").style.display = "none";
-    });
-  });
-
-</script>
 
 </body>
 </html>
